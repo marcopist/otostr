@@ -5,7 +5,7 @@
 import pytest
 
 
-from otostr import otostr
+from otostr import profile
 
 
 @pytest.fixture
