@@ -2,8 +2,7 @@
 otostr
 ======
 
-
-Turn integration testing into unit testing.
+Pronounced `oh-toaster`. Turn integration testing into unit testing.
 
 
 * Free software: MIT license
