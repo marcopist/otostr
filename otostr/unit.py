@@ -18,10 +18,11 @@ class Unit:
         self.filename = filename
         self.args = copy.deepcopy(args)
         self.state = copy.deepcopy(state)
+        print(">>> [OTOSTR]: FOUND UNIT:", self.fullname, "//", "args =", self.args, "/", "state =", self.state)
         self.ran = False
         
     def run(self):
-        print(">>> [OTOSTR]: RUNNING UNIT", self.filename, self.name, self.args, self.state)
+        print(">>> [OTOSTR]: RUNNING UNIT:", self.fullname, "//", "args =", self.args, "/", "state =", self.state)
         method = getattr(sys.modules[self.module], self.name)
         mock_state = patch(self.module, self.state)
         with mock_state:

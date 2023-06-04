@@ -31,7 +31,6 @@ def profile(suite: Suite):
             f_args = {k:v for k, v in frame.f_locals.items() if k in frame.f_code.co_varnames[:frame.f_code.co_argcount]}
             f_state = {k:v for k, v in frame.f_globals.items() if k in frame.f_code.co_names}
 
-            print(">>> [OTOSTR]: FOUND UNIT:", f_file, f_location, f_name)
             suite.add_unit(Unit(f_fname, f_location, f_name, f_file, f_args, f_state))
         
     return prof
