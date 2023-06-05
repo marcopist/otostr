@@ -34,9 +34,9 @@ class Unit:
     
     def __str__(self):
         return f"""
-        name = {self.name}
-        state = {self.state}
-        args = {self.args}
-        return = {self.result}
-        altstate = {self.altstate}
-        """
+    name = {self.name}
+    state = {self.state}
+    args = {self.args}
+    return = {self.result}
+    altstate = {self.altstate}
+    """

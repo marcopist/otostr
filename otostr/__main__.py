@@ -21,6 +21,6 @@ if __name__ == "__main__":
     runpy.run_path(target)
     sys.setprofile(None)
 
-    fst = suite.allunits[0]
-    fst.run()
-    print(suite.groups)
+    # fst = suite.allunits[0]
+    # fst.run()
+    # print(fst)
